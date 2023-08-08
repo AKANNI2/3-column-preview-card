@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* Styling the main container */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+  margin: 9.6rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  padding: 4.2rem 3.6rem;
+  height: 45rem;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.heading {
+  color: hsl(0, 0%, 95%);
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  margin: 3rem 0 3.6rem 0;
+}
+
+.text-description {
+  font-size: 1.4rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #fff;
+  padding: 1.4rem 3.2rem;
+  border-radius: 1000rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  display: inline-block;
+  transition: all ease 0.3s;
+}
+
+.sedans-btn:link,
+.sedans-btn:visited {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans-btn:hover,
+.sedans-btn:active {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+  box-shadow: inset 0 0 0 0.2rem hsl(0, 0%, 95%);
+  font-weight: 400;
+}
+
+.suv-btn:link,
+.suv-btn:visited {
+  color: hsl(184, 100%, 22%);
+}
+
+.suv-btn:hover,
+.suv-btn:active {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+  box-shadow: inset 0 0 0 0.2rem hsl(0, 0%, 95%);
+  font-weight: 400;
+}
+
+.luxury-btn:link,
+.luxury-btn:visited {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury-btn:hover,
+.luxury-btn:active {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+  box-shadow: inset 0 0 0 0.2rem hsl(0, 0%, 95%);
+  font-weight: 400;
+}
+
+/* Styling the footer */
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
